@@ -1,0 +1,17 @@
+@keyframes cta-animated {
+    0% {
+        text-shadow: 0 10px 30px rgb(223, 16, 58), 0 0 30px red, 0 0 10px orange, 0 0 10px darkorange, -5px -5px 5px yellow, 10px -10px 20px yellow;
+    }
+    25% {
+        text-shadow: 0 10px 30px rgb(223, 16, 58), 0 0 30px red, 0 0 30px orange, -5px -5px 5px yellow, 5px -10px 10px yellow, -5px -10px 20px yellow;
+    }
+    50% {
+        text-shadow: 0 10px 30px rgb(223, 16, 58), 0 0 30px red, 0 0 10px orange, 0 0 10px darkorange, -5px -5px 5px yellow, 10px -10px 20px yellow;
+    }
+    75% {
+        text-shadow: 0 10px 30px rgb(223, 16, 58), 0 0 30px red, 0 0 30px orange, -5px -5px 5px yellow, 5px -10px 10px yellow, -5px -10px 20px yellow;
+    }
+    100% {
+        text-shadow: 0 10px 30px rgb(223, 16, 58), 0 0 30px red, 0 0 10px orange, 0 0 10px darkorange, -5px -5px 5px yellow, 10px -10px 20px yellow;
+    }
+}

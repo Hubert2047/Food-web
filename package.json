@@ -1,0 +1,22 @@
+{
+    "name": "food-website-codebyself",
+    "version": "1.0.0",
+    "description": "",
+    "main": "script.js",
+    "scripts": {
+        "watch-sass": "node-sass sass/style.scss css/style.css -w"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Hubert2047/Food-web.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Hubert2047/Food-web/issues"
+    },
+    "homepage": "https://github.com/Hubert2047/Food-web#readme",
+    "devDependencies": {
+        "node-sass": "^7.0.1"
+    }
+}

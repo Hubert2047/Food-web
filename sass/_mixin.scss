@@ -1,0 +1,24 @@
+@mixin respond($device) {
+    @if $device=='tab-land' {
+        @media only screen and (max-width: $bp-big) {
+            @content
+        }
+    }
+    @if $device=='tab-port' {
+        @media only screen and (max-width: $bp-medium) {
+            @content
+        }
+    }
+    @if $device=='mobile' {
+        @media only screen and (max-width: $bp-small) {
+            @content
+        }
+    }
+}
+
+@mixin abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
