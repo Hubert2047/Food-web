@@ -1,6 +1,6 @@
 * {
     padding: 0;
-    margin: 0;
+    margin : 0;
 }
 
 li {
@@ -13,14 +13,16 @@ a {
 
 html {
     font-size: 62.5%;
+
     @include respond(tab-port) {
         font-size: 50%;
     }
+
     scroll-behavior: smooth;
 }
 
 body {
     font-weight: 400;
-    box-sizing: border-box;
+    box-sizing : border-box;
     font-family: 'Nunito', sans-serif;
 }

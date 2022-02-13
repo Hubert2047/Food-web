@@ -286,3 +286,36 @@
        .review {
            padding: 4rem 0;
        }
+       
+       .footer {
+           display: flex;
+           flex-direction: column;
+           padding: 4rem 5% 4vw;
+           row-gap: 3rem;
+           background-color: $color-grey-1;
+           &__nav {
+               &-list {
+                   display: flex;
+                   justify-content: flex-start;
+                   flex-wrap: wrap;
+                   gap: 1rem;
+               }
+               &-item {
+                   font-size: 1.5rem;
+                   text-align: center;
+                   cursor: pointer;
+                   &:hover {
+                       border-bottom: 1px solid $color-primary;
+                   }
+               }
+               &-link {
+                   color: $color-black-1;
+               }
+           }
+       }
+       
+       .copyright {
+           text-align: center;
+           font-size: 1.4rem;
+           margin: 1rem 0;
+       }

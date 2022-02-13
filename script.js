@@ -95,3 +95,13 @@ var swiper = new Swiper(".mySwiper", {
         }
     }
 });
+// open loader
+
+function loader(){
+    document.getElementById('loader').classList.add('fade-out')
+}
+function fadeOut(){
+    setTimeout(loader,4000)
+}
+
+window.onload = fadeOut()
