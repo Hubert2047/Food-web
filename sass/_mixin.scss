@@ -22,3 +22,31 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@mixin underline-effect {
+    &:hover::after {
+        width: 80%;
+    }
+    &:hover::before {
+        width: 90%;
+    }
+    &::after,
+    &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        // top: 100%;
+        width: 0;
+        height: 1px;
+        background-color: $color-fouth;
+        transition: $transition-style-slow;
+    }
+    &::after {
+        left: 10%;
+        top: 100%;
+    }
+    &::before {
+        right: 5%;
+        top: 110%;
+    }
+}

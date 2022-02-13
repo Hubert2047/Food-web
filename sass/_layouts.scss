@@ -189,12 +189,17 @@
                margin-top: 2rem;
            }
            &__change {
+               cursor: pointer;
                padding: 1rem;
                border-radius: 50%;
                border: 2px solid $color-primary;
                background-color: $color-grey-1;
                &:hover {
                    background-color: $color-black;
+                   transform: translateY(-3px);
+               }
+               &:active {
+                   transform: translateY(0) scale(.9);
                }
                &.active {
                    background-color: $color-black;
@@ -298,18 +303,60 @@
                    display: flex;
                    justify-content: flex-start;
                    flex-wrap: wrap;
-                   gap: 1rem;
+                   gap: 1.5rem;
                }
                &-item {
                    font-size: 1.5rem;
                    text-align: center;
                    cursor: pointer;
+                   position: relative;
+                   overflow: hidden;
+                   z-index: 3;
+                   background-color: $color-grey-1;
+                   padding: .2rem;
+                   border-radius: 5px;
+                   //    border: 1px solid $color-fouth;
+                   &::after,
+                   &::before {
+                       content: "";
+                       display: inline-block;
+                       position: absolute;
+                       width: 0;
+                       height: 1px;
+                       transition: $transition-style-slow;
+                   }
+                   &::after {
+                       inset: 1.5px;
+                       width: calc(100% - 3px);
+                       height: calc(100% - 3px);
+                       z-index: 2;
+                       background-color: $color-grey-1;
+                   }
+                   &::before {
+                       width: 120%;
+                       height: 3rem;
+                       top: -30%;
+                       left: -8%;
+                       z-index: 1;
+                       animation: btn-rotate-effected 3s linear infinite;
+                   }
                    &:hover {
-                       border-bottom: 1px solid $color-primary;
+                       &::before {
+                           background: linear-gradient(#1D976C, #93F9B9);
+                       }
+                       &::after {
+                           background-color: $color-black-1;
+                       }
+                       & .footer__nav-link {
+                           color: $color-white;
+                       }
                    }
                }
                &-link {
                    color: $color-black-1;
+                   //    color: $color-white;
+                   position: relative;
+                   z-index: 4;
                }
            }
        }

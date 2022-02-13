@@ -75,10 +75,10 @@
                 &:hover {
                     background-color: $color-primary;
                     letter-spacing: .1rem;
+                    transform: translateY(-3px);
                 }
                 &:active {
-                    color: $color-primary;
-                    background-color: $color-white;
+                    transform: translateY(0) scale(.9);
                 }
             }
             
@@ -88,7 +88,10 @@
                     gap: 2rem;
                     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
                 }
-                &__heading {}
+                &__heading {
+                    position: relative;
+                    @include underline-effect
+                }
                 &__item {
                     cursor: pointer;
                     padding: 1rem 2rem 2rem 2rem;
@@ -107,6 +110,15 @@
                             visibility: visible;
                         }
                         transform: scale(1.03);
+                        & .card__heading::after {
+                            width: 80%;
+                        }
+                        & .card__heading::before {
+                            width: 90%;
+                        }
+                    }
+                    &:active {
+                        transform: scale(.9);
                     }
                 }
                 &__btn {

@@ -7,8 +7,10 @@ $color-black :#192a56;
 $color-black-1: #2C3333;
 $color-grey-1 :rgb(238, 238, 238);
 $color-grey-2 :#FBF8F1;
+$transition-style-fastest :all .2s ease;
 $transition-style-fast :all .3s ease;
-$transition-style-medium:all .4s ease;
+$transition-style-medium :all .4s ease;
+$transition-style-slow :all .6s linear;
 $shadow-small :0 .5rem 1rem rgba(0, 0, 0, .1);
 $shadow-medium :0 1rem 2rem rgba(0, 0, 0, .1);
 $bp-big :62.5em; //1000px
