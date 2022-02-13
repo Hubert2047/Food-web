@@ -177,7 +177,7 @@
     grid-template-columns: max-content max-content 1fr;
     grid-template-rows: min-content minmax(25rem, 1fr);
     @include respond(mobile) {
-        grid-template-rows: repeat(2, min-content) minmax(38rem, 1fr);
+        grid-template-rows: repeat(2, min-content) minmax(30rem, 1fr);
     }
     column-gap: 1rem;
     row-gap: 1.5rem;

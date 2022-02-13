@@ -225,7 +225,7 @@ body {
   z-index: 10; }
   @media only screen and (max-width: 37.5em) {
     .card-review {
-      grid-template-rows: repeat(2, min-content) minmax(38rem, 1fr); } }
+      grid-template-rows: repeat(2, min-content) minmax(30rem, 1fr); } }
   .card-review__img {
     grid-column: 1/2;
     height: 5rem;
