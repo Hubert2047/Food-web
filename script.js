@@ -106,3 +106,18 @@ function fadeOut() {
 }
 
 window.onload = fadeOut()
+
+//login
+const signInBtn = document.getElementById('sign-in-btn ')
+console.log(signInBtn);
+const signUpBtn = document.getElementById('sign-up-btn ')
+console.log(signUpBtn);
+const login = document.querySelector('.login')
+signUpBtn.addEventListener('click', () => {
+    login.classList.add('login__sign-up-mode')
+})
+
+signInBtn.addEventListener('click', () => {
+    login.classList.remove('login__sign-up-mode')
+    console.log('go')
+})
