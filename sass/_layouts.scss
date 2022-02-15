@@ -18,7 +18,7 @@
        
        .header {
            display: flex;
-           padding: .5rem 7%;
+           padding: .5rem 2%;
            text-align: center;
            gap: 1rem;
            @include respond(tab-land) {
@@ -68,7 +68,7 @@
        
        .navbar {
            transition: $transition-style-fast;
-           @include respond(tab-port) {
+           @include respond(tab-land) {
                position: absolute;
                top: 100%;
                left: 0px;
@@ -86,7 +86,7 @@
                display: flex;
                gap: .5em;
                justify-content: space-between;
-               @include respond(tab-port) {
+               @include respond(tab-land) {
                    flex-direction: column;
                    gap: 1em;
                }
@@ -107,9 +107,9 @@
                    background-color: $color-white;
                }
                transition: $transition-style-fast;
-               @include respond(tab-port) {
+               @include respond(tab-land) {
                    background-color: $color-grey-1;
-                   padding: 1em 1.5em;
+                   padding: .8em 1.5em;
                    font-size: 2rem;
                }
                &.active {
@@ -127,7 +127,7 @@
        
        #menu-bars {
            display: none;
-           @include respond(tab-port) {
+           @include respond(tab-land) {
                display: flex;
            }
        }

@@ -120,7 +120,8 @@ signInBtn.addEventListener('click', () => {
 })
 
 // check account
-var loginBtn = document.getElementById('login__btn')
+var loginBtn = document.querySelector('#login__btn')
+
 loginBtn.addEventListener('click', () => {
     login.classList.add('fade-out')
 })

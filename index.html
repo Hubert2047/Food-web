@@ -36,15 +36,33 @@
                 <li class="navbar__item"><a class="navbar__link" href="#order">Order</a></li>
             </ul>
         </nav>
-        <div class="header__icons">
-            <i class="header__icon fas fa-bars" id="menu-bars">
-            </i>
+        <div class="nav-user">
             <i class="header__icon fas fa-search" id="search-btn">
             </i>
-            <i class="header__icon fas fa-heart">
+            <div class="nav-user__icons">
+                <a href="">
+                    <i class="fa-solid fa-bell  nav-user__icon">
+                        <span>2</span>
+                    </i>
+                </a>
+                <a href="">
+                    <i class="fa fa-message nav-user__icon">
+                        <span>8</span>
+                    </i>
+                </a>
+                <a href="" id="shopping-cart">
+                    <i class=" fas fa-shopping-cart nav-user__icon">
+                    </i>
+                </a>
+
+            </div>
+
+            <img src="/images/hubert.jpg" id="user" class="nav-user__photo" alt="">
+
+            <div class="nav-user__name"><span>Hubert</span></div>
+            <i class="header__icon fas fa-bars" id="menu-bars">
             </i>
-            <i class="header__icon fas fa-shopping-cart">
-            </i>
+
         </div>
     </header>
     <!-- search form -->
@@ -623,7 +641,7 @@
 
         </section>
         <!-- new product -->
-        <section class=" order "id=" order ">
+        <section class=" order " id=" order ">
             <h3 class=" heading-h3 section__heading ">New Product</h3>
             <h2 class=" heading-h2 section__sub-heading ">Exciting Food</h2>
             </section>
@@ -916,8 +934,8 @@
         <div class=" loader " id=" loader ">
             <img src=" images/loader.gif " alt=" " class=" loader__img--fruit ">
     </div>
-    <!-- LOGIN  -->
-        <div class="login ">
+   <!-- LOGIN  -->
+      <div class="login ">
             <div class="login__form ">
                 <div class="login__signin-signup ">
                        <!-- form-sign-in -->
@@ -1014,7 +1032,8 @@
         </div>
 
     </div>
-    </div>
+    </div> -->
+    <!-- end login -->
     <!-- swipper for slider card-review -->
 
     <script src=" https://unpkg.com/swiper/swiper-bundle.min.js "></script>
