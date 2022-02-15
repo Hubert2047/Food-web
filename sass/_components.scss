@@ -66,6 +66,7 @@
                 outline: none;
                 border: none;
                 background: none;
+                font-weight: 600;
                 cursor: pointer;
                 display: inline-block;
                 transition: $transition-style-fast;
@@ -377,12 +378,7 @@
                 inset: 0;
                 overflow: hidden;
                 z-index: 1100;
-                background-color: #fff;
-                // @include respond(tab-land) {
-                //     min-height: 80rem;
-                //     height: 100vh;
-                // }
-                // transition: $transition-style-medium;
+                background-color: #eee;
                 &::before {
                     content: '';
                     position: absolute;
@@ -392,14 +388,29 @@
                     top: 10%;
                     right: 45%;
                     z-index: 6;
-                    transition: all 1s ease-in-out;
+                    transition: all .8s ease-in-out;
                     transform: translateY(-50%);
                     background: linear-gradient(-45deg, #4481eb, #04befe);
+                    @include respond(tab-port) {
+                        left: 30%;
+                        bottom: 68%;
+                        width: 150rem;
+                        height: 150rem;
+                        transform: translateX(-50%);
+                        right: initial;
+                        top: initial;
+                    }
                 }
                 &__sign-up-mode {
                     &::before {
                         transform: translate(100%, -50%);
                         right: 52%;
+                        background: $color-fouth;
+                        @include respond(tab-port) {
+                            transform: translate(-50%, 100%);
+                            bottom: 35%;
+                            right: initial;
+                        }
                     }
                     & .panel__left {
                         transform: translateX(-800px);
@@ -408,9 +419,21 @@
                     & .panel__right {
                         transform: translateX(0);
                         pointer-events: all;
+                        color: #04befe;
+                    }
+                    & .panel__content {
+                        color: $color-black-1;
+                    }
+                    & .panel__btn {
+                        color: currentColor;
                     }
                     & .login__signin-signup {
                         left: 25%;
+                        @include respond(tab-port) {
+                            top: 15%;
+                            left: 50%;
+                            transform: translate(-50%, 0);
+                        }
                     }
                     & .login__sign-in {
                         z-index: 1;
@@ -432,11 +455,16 @@
                     position: absolute;
                     top: 50%;
                     left: 75%;
+                    width: 100%;
                     transform: translate(-50%, -50%);
                     display: grid;
                     grid-template-columns: 1fr;
                     z-index: 5;
                     transition: all .5s .6s ease-in;
+                    @include respond(tab-port) {
+                        left: 50%;
+                        top: 60%;
+                    }
                 }
                 &__sign-form {
                     display: flex;
@@ -461,10 +489,10 @@
                     color: #444;
                 }
                 &__input-field {
-                    min-width: 35rem;
+                    max-width: 35rem;
                     width: 100%;
                     height: 4rem;
-                    background-color: #f0f0f0;
+                    background-color: $color-white;
                     border-radius: 5rem;
                     display: grid;
                     grid-template-columns: 15% 85%;
@@ -488,7 +516,7 @@
                     justify-content: center;
                     align-items: center;
                     font-size: 1.2rem;
-                    color: #acacac;
+                    color: $color-grey-3;
                 }
                 &__social-text {
                     padding: .7rem 0;
@@ -502,17 +530,22 @@
                 &__social-icon {
                     height: 3.5rem;
                     width: 3.5rem;
-                    border: 1px solid #333;
+                    border: 1px solid $color-black-1;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    color: currentColor;
+                    color: $color-secondary;
                     border-radius: 50%;
-                    font-size: 1.2rem;
+                    font-size: 1.4rem;
                     transition: $transition-style-fast;
                     &:hover {
-                        color: #4481eb;
-                        border-color: #4481eb;
+                        color: $color-white;
+                        background-color: $color-primary;
+                        transform: rotate(360deg) translateY(-3px);
+                        border-color: $color-white;
+                    }
+                    &:active {
+                        transform: translateX(0);
                     }
                 }
             }
@@ -525,40 +558,75 @@
                 right: 0;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
+                @include respond(tab-port) {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(3, 1fr);
+                    // background-color: green;
+                }
             }
             
             .panel {
                 display: flex;
                 flex-direction: column;
-                align-items: flex-end;
                 text-align: center;
                 z-index: 7;
+                @include respond(tab-port) {
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                }
                 &__left {
                     padding: 12% 17% 2rem 12%;
                     pointer-events: all;
                     transition: all 1.1s .4s ease-in-out;
+                    align-items: flex-end;
+                    @include respond(tab-port) {
+                        grid-row: 1/2;
+                        padding: 2.5rem 8%;
+                    }
                 }
                 &__right {
-                    padding: 12% 12% 2rem 17%;
+                    padding: 12% 12% 2rem 10%;
                     transform: translateX(800px);
                     pointer-events: none;
+                    align-items: flex-start;
                     transition: all 1.1s .4s ease-in-out;
+                    @include respond(tab-port) {
+                        transform: translateY(300px);
+                        grid-row: 3/4;
+                        padding: 2.5rem 8%;
+                    }
                 }
                 &__content {
                     color: $color-grey-1;
                     &>*:not(:last-child) {
                         margin-bottom: 1.5rem;
+                        @include respond(tab-port) {
+                            margin-bottom: 1rem;
+                        }
                     }
                     & p {
-                        font-size: 1.2rem;
+                        font-size: 1.4rem;
+                        text-align: justify;
+                        text-indent: 3rem;
+                    }
+                    @include respond(tab-port) {
+                        padding-right: 10%;
+                        ;
                     }
                 }
                 &__heading {
                     font-weight: 700;
                     line-height: 1;
                     font-size: 2.2rem;
+                    @include respond(tab-port) {
+                        font-size: 2rem;
+                    }
                 }
                 &__img {
                     width: 100%;
+                    @include respond(tab-port) {
+                        width: 30%;
+                    }
                 }
             }

@@ -97,15 +97,15 @@ var swiper = new Swiper(".mySwiper", {
 });
 // open loader
 
-function loader() {
-    document.querySelector('.loader').classList.add('fade-out')
-}
+// function loader() {
+//     document.querySelector('.loader').classList.add('fade-out')
+// }
 
-function fadeOut() {
-    setTimeout(loader, 2500)
-}
+// function fadeOut() {
+//     setTimeout(loader, 2500)
+// }
 
-window.onload = fadeOut()
+// window.onload = fadeOut()
 
 //login
 const signInBtn = document.getElementById('sign-in-btn ')
