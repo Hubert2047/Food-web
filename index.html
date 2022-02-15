@@ -913,99 +913,114 @@
            
         </footer>
         <!-- loader -->
-        <!-- <div class=" loader " id=" loader ">
+        <div class=" loader " id=" loader ">
             <img src=" images/loader.gif " alt=" " class=" loader__img--fruit ">
-    </div> -->
+    </div>
     <!-- LOGIN  -->
         <div class="login ">
             <div class="login__form ">
                 <div class="login__signin-signup ">
-                       <!-- form-in -->
+                       <!-- form-sign-in -->
                     <form action=" " class="login__sign-form login__sign-in ">
                         <h2 class="login__title ">Sign in</h2>
                         <div class="login__input-field ">
-                            <i class="fas fa-user login__input-icon "></i>
-                            <input type="text " class="login__input " placeholder="Username ">
+                            <input type="text " class="login__input input " placeholder="Username " required>
+                            <i class="fas fa-user login__input-icon input-icon "></i>
                         </div>
-                        <div class="login__input-field ">
-                            <i class="fas fa-lock login__input-icon "></i>
-                            <input type="password " class="login__input " placeholder="password ">
-                        </div>
-                        <button class="btn btn--light-blue ">Login</button>
-                        <p class="login__social-text ">Or Sign in with social platforms</p>
-                        <div class="login__social-media ">
-                                <a  class="login__social-icon ">
-                                    <i class="fab fa-facebook "></i>
-                                </a>
-                                <a  class="login__social-icon ">
-                                    <i class="fab fa-twitter "></i>
-                                </a>
-                                <a  class="login__social-icon ">
-                                    <i class="fab fa-google "></i>
-                                </a>
-                                <a  class="login__social-icon ">
-                                    <i class="fab fa-linkedin-in "></i>
-                                </a>
-                        </div>
-                    </form>  
-                    <!-- form-up -->
-                    <form action=" " class="login__sign-form login__sign-up ">
-                        <h2 class="login__title ">Sign up</h2>
-                        <div class="login__input-field ">
-                            <i class="fas fa-user login__input-icon "></i>
-                            <input type="text " class="login__input " placeholder="Username ">
-                        </div>
-                        <div class="login__input-field ">
-                            <i class="fas fa-lock login__input-icon "></i>
-                            <input type="password " class="login__input " placeholder="password ">
-                        </div>
-                      <button class="btn btn--light-blue ">Login</button>
-                        <p class="login__social-text ">Or Sign in with social platforms</p>
-                        <div class="login__social-media ">
-                                <a  class="login__social-icon ">
-                                    <i class="fab fa-facebook "></i>
-                                </a>
-                                <a  class="login__social-icon ">
-                                    <i class="fab fa-twitter "></i>
-                                </a>
-                                <a  class="login__social-icon ">
-                                    <i class="fab fa-google "></i>
-                                </a>
-                                <a  class="login__social-icon ">
-                                    <i class="fab fa-linkedin-in "></i>
-                                </a>
-                        </div>
-                    </form>   
-                </div>
-            </div>
-            <div class="panels ">
-                <!-- panel left -->
-                <div class="panel panel__left ">
-                    <div class="panel__content ">
-                        <h3 class="panel__heading ">New here ?</h3>
-                        <p>if you dont have an account. Please, click on Sing Up to create an account.</p>
-                        <button class="btn btn--transparent panel__btn " id="sign-up-btn ">Sing up</button>
-                    </div>
-                    <img src="images/login-img-1.svg " alt=" " class="panel__img ">
-                </div>
-  <!-- panel right -->
-                <div class="panel panel__right ">
-                    <div class="panel__content ">
-                        <h3 class="panel__heading ">Already have an account ?</h3>
-                        <p>If you already have an account. Please, click on Sing in .</p>
-                        <button class="btn btn--transparent panel__btn " id="sign-in-btn ">Sing in</button>
-                    </div>
-                    <img src="images/login-img-2.svg " alt=" " class="panel__img ">
-                </div>
-
-            </div>
+                        <div class="login__input-field "> 
+                            <i class="fas fa-eye login__input-icon login__input-icon--eye "></i>       
+                            <input type="password " class="login__input input " placeholder=Password " required>
+        <i class="fas fa-lock login__input-icon input-icon "></i>
+    </div>
+    <button class="btn btn--light-blue " id="login__btn">Login</button>
+    <p class="login__social-text ">Or Sign in with social platforms</p>
+    <div class="login__social-media ">
+        <a class="login__social-icon ">
+            <i class="fab fa-facebook "></i>
+        </a>
+        <a class="login__social-icon ">
+            <i class="fab fa-twitter "></i>
+        </a>
+        <a class="login__social-icon ">
+            <i class="fab fa-google "></i>
+        </a>
+        <a class="login__social-icon ">
+            <i class="fab fa-linkedin-in "></i>
+        </a>
+    </div>
+    </form>
+    <!-- form sign-up -->
+    <form action=" " class="login__sign-form login__sign-up ">
+        <h2 class="login__title ">Sign up</h2>
+        <div class="login__input-field ">
+            <input type="email " class="login__input input " placeholder="Enter email " required>
+            <i class="fas fa-envelope login__input-icon input-icon "></i>
         </div>
-        <!-- swipper for slider card-review -->
- 
-        <script src=" https://unpkg.com/swiper/swiper-bundle.min.js "></script>
-        <!-- main js -->
-        <script src=" script.js "></script>
+        <div class="login__input-field ">
+            <input type="text " class="login__input input " placeholder="Enter username " required>
+            <i class="fas fa-user login__input-icon input-icon "></i>
+        </div>
+        <div class="login__input-field ">
+            <i class="fas fa-eye login__input-icon login__input-icon--eye "></i>
+            <input type="password " class="login__input input " placeholder="Enter password " required>
+            <i class="fas fa-lock login__input-icon input-icon "></i>
+        </div>
 
-    </body>
+        <div class="login__input-field ">
+            <i class="fas fa-eye login__input-icon login__input-icon--eye "></i>
+            <input type="password " class="login__input input " placeholder="Re-enter the password " required>
+            <i class="fas fa-lock login__input-icon input-icon "></i>
+
+        </div>
+        <button class="btn btn--light-blue ">Login</button>
+        <p class="login__social-text ">Or Sign in with social platforms</p>
+        <div class="login__social-media ">
+            <a class="login__social-icon ">
+                <i class="fab fa-facebook "></i>
+            </a>
+            <a class="login__social-icon ">
+                <i class="fab fa-twitter "></i>
+            </a>
+            <a class="login__social-icon ">
+                <i class="fab fa-google "></i>
+            </a>
+            <a class="login__social-icon ">
+                <i class="fab fa-linkedin-in "></i>
+            </a>
+        </div>
+    </form>
+
+    </div>
+    </div>
+
+    <div class="panels ">
+        <!-- panel left -->
+        <div class="panel panel__left ">
+            <div class="panel__content ">
+                <h3 class="panel__heading ">New here ?</h3>
+                <p>If you dont have an account. Please, click on Sing Up to create an account.</p>
+                <button class="btn btn--transparent panel__btn " id="sign-up-btn ">Sing up</button>
+            </div>
+            <img src="images/login-img-1.svg " alt=" " class="panel__img ">
+        </div>
+        <!-- panel right -->
+        <div class="panel panel__right ">
+            <div class="panel__content ">
+                <h3 class="panel__heading ">Already have an account ?</h3>
+                <p>If you already have an account. Please, click on Sing in .</p>
+                <button class="btn btn--transparent panel__btn " id="sign-in-btn ">Sing in</button>
+            </div>
+            <img src="images/login-img-2.svg " alt=" " class="panel__img ">
+        </div>
+
+    </div>
+    </div>
+    <!-- swipper for slider card-review -->
+
+    <script src=" https://unpkg.com/swiper/swiper-bundle.min.js "></script>
+    <!-- main js -->
+    <script src=" script.js "></script>
+
+</body>
 
 </html>

@@ -277,10 +277,8 @@
             
             .loader {
                 position: fixed;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
+                inset: 0;
+                height: 100%;
                 background-color: $color-white;
                 display: flex;
                 flex-direction: column;
@@ -374,8 +372,20 @@
             }
             
             .login {
+                &__form {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                }
+                &.fade-out {
+                    top: 110%;
+                    opacity: 0;
+                }
                 position: fixed;
                 inset: 0;
+                height: 100%;
                 overflow: hidden;
                 z-index: 1100;
                 background-color: #eee;
@@ -386,7 +396,7 @@
                     height: 2000px;
                     border-radius: 50%;
                     top: 10%;
-                    right: 45%;
+                    right: 50%;
                     z-index: 6;
                     transition: all .8s ease-in-out;
                     transform: translateY(-50%);
@@ -401,6 +411,7 @@
                         top: initial;
                     }
                 }
+                //change mode
                 &__sign-up-mode {
                     &::before {
                         transform: translate(100%, -50%);
@@ -430,7 +441,7 @@
                     & .login__signin-signup {
                         left: 25%;
                         @include respond(tab-port) {
-                            top: 15%;
+                            top: 12%;
                             left: 50%;
                             transform: translate(-50%, 0);
                         }
@@ -443,13 +454,6 @@
                         z-index: 2;
                         opacity: 1;
                     }
-                }
-                &__form {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    top: 0;
-                    left: 0;
                 }
                 &__signin-signup {
                     position: absolute;
@@ -495,8 +499,10 @@
                     background-color: $color-white;
                     border-radius: 5rem;
                     display: grid;
-                    grid-template-columns: 15% 85%;
+                    grid-template-columns: 15% 70% 15%;
+                    grid-template-rows: 1fr;
                     padding: 0 .4rem;
+                    overflow: hidden;
                 }
                 &__input {
                     background: none;
@@ -504,19 +510,37 @@
                     border: none;
                     line-height: 1;
                     font-weight: 500;
-                    font-size: 1.4rem;
+                    font-size: 1.6rem;
                     color: #333;
+                    height: 95%;
+                    grid-column: 2/3;
+                    grid-row: 1/2;
                     &::placeholder {
                         color: #aaa;
                         font-weight: 500;
+                        font-size: 1.5rem;
                     }
                 }
                 &__input-icon {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    font-size: 1.2rem;
+                    font-size: 1.4rem;
                     color: $color-grey-3;
+                    flex: 1 1 15%;
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+                    &--eye {
+                        cursor: pointer;
+                        grid-column: 3/4;
+                        &:hover {
+                            color: $color-primary;
+                            transform: translateY(-1px);
+                        }
+                        &:active {
+                            transform: translateY(0);
+                        }
+                    }
                 }
                 &__social-text {
                     padding: .7rem 0;
@@ -573,7 +597,6 @@
                 @include respond(tab-port) {
                     flex-direction: row;
                     justify-content: center;
-                    align-items: center;
                 }
                 &__left {
                     padding: 12% 17% 2rem 12%;
@@ -583,6 +606,7 @@
                     @include respond(tab-port) {
                         grid-row: 1/2;
                         padding: 2.5rem 8%;
+                        align-items: center;
                     }
                 }
                 &__right {
@@ -595,6 +619,7 @@
                         transform: translateY(300px);
                         grid-row: 3/4;
                         padding: 2.5rem 8%;
+                        align-items: center;
                     }
                 }
                 &__content {

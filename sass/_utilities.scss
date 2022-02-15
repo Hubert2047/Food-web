@@ -1,0 +1,11 @@
+.invalid {
+    &:focus {
+        border-bottom: 2px solid $color-fouth;
+        &+.input-icon {
+            color: $color-primary;
+        }
+    }
+    &:invalid {
+        border-bottom: 2px solid $color-secondary;
+    }
+}

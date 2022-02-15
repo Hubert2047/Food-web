@@ -97,27 +97,38 @@ var swiper = new Swiper(".mySwiper", {
 });
 // open loader
 
-// function loader() {
-//     document.querySelector('.loader').classList.add('fade-out')
-// }
+function loader() {
+    document.querySelector('.loader').classList.add('fade-out')
+}
 
-// function fadeOut() {
-//     setTimeout(loader, 2500)
-// }
+function fadeOut() {
+    setTimeout(loader, 2500)
+}
 
-// window.onload = fadeOut()
+window.onload = fadeOut()
 
 //login
 const signInBtn = document.getElementById('sign-in-btn ')
-console.log(signInBtn);
 const signUpBtn = document.getElementById('sign-up-btn ')
-console.log(signUpBtn);
-const login = document.querySelector('.login')
+var login = document.querySelector('.login')
 signUpBtn.addEventListener('click', () => {
     login.classList.add('login__sign-up-mode')
 })
 
 signInBtn.addEventListener('click', () => {
     login.classList.remove('login__sign-up-mode')
-    console.log('go')
 })
+
+// check account
+var loginBtn = document.getElementById('login__btn')
+loginBtn.addEventListener('click', () => {
+    login.classList.add('fade-out')
+})
+
+// add validation into input form
+var inputs = document.querySelectorAll('.input')
+inputs.forEach(input => {
+    input.addEventListener('input', () => {
+        input.classList.add('invalid')
+    })
+});
