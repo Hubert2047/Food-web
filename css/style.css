@@ -716,6 +716,12 @@ body {
   background-color: #eee;
 }
 
+@media only screen and (max-width: 48em) {
+  .login {
+    min-height: 700px;
+  }
+}
+
 .login__form {
   position: absolute;
   width: 100%;
@@ -738,8 +744,8 @@ body {
   top: 10%;
   right: 50%;
   z-index: 6;
-  -webkit-transition: all .8s ease-in-out;
-  transition: all .8s ease-in-out;
+  -webkit-transition: all .8s linear;
+  transition: all .8s linear;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background: linear-gradient(-45deg, #4481eb, #04befe);
@@ -830,8 +836,8 @@ body {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   z-index: 5;
-  -webkit-transition: all .5s .6s ease-in;
-  transition: all .5s .6s ease-in;
+  -webkit-transition: all .5s .6s linear;
+  transition: all .5s .6s linear;
 }
 
 @media only screen and (max-width: 48em) {
@@ -866,15 +872,15 @@ body {
 
 .login__sign-in {
   z-index: 2;
-  -webkit-transition: all .5s .6s ease-in;
-  transition: all .5s .6s ease-in;
+  -webkit-transition: all .5s .6s linear;
+  transition: all .5s .6s linear;
 }
 
 .login__sign-up {
   z-index: 1;
   opacity: 0;
-  -webkit-transition: all .5s .6s ease-in;
-  transition: all .5s .6s ease-in;
+  -webkit-transition: all .5s .6s linear;
+  transition: all .5s .6s linear;
 }
 
 .login__title {
@@ -1076,8 +1082,8 @@ body {
 .panel__left {
   padding: 12% 17% 2rem 12%;
   pointer-events: all;
-  -webkit-transition: all 1.1s .4s ease-in-out;
-  transition: all 1.1s .4s ease-in-out;
+  -webkit-transition: all 1.1s .4s linear-out;
+  transition: all 1.1s .4s linear-out;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -1103,8 +1109,8 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-transition: all 1.1s .4s ease-in-out;
-  transition: all 1.1s .4s ease-in-out;
+  -webkit-transition: all 1.1s .4s linear-out;
+  transition: all 1.1s .4s linear-out;
 }
 
 @media only screen and (max-width: 48em) {
