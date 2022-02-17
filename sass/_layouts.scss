@@ -37,14 +37,20 @@
                font-size: 2.5rem;
                color: $color-primary;
                cursor: default;
+               text-align: left;
                @include respond(tab-land) {
                    flex: 1;
                }
-               text-align: left;
+               @include respond(mobile) {
+                   font-size: 3rem;
+               }
            }
            &__name {
                color: $color-black;
                font-weight: 700;
+               @include respond(mobile) {
+                   display: none;
+               }
            }
            &__icons {
                display: flex;

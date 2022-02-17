@@ -122,15 +122,15 @@ const swiper = new Swiper(".mySwiper", {
 });
 // open loader
 
-// function loader() {
-//     document.querySelector('.loader').classList.add('fade-out')
-// }
+function loader() {
+    document.querySelector('.loader').classList.add('fade-out')
+}
 
-// function fadeOut() {
-//     setTimeout(loader, 2500)
-// }
+function fadeOut() {
+    setTimeout(loader, 3000)
+}
 
-// window.onload = fadeOut()
+window.onload = fadeOut()
 
 
 //login change mode
@@ -223,7 +223,6 @@ inputs.forEach(input => {
 
 //add open-close open eye on login
 const passwordEyes = document.querySelectorAll('.login__eye')
-    // console.log(passwordEyes);
 passwordEyes.forEach((passwordEye) => {
     passwordEye.addEventListener('click', () => {
         let id = passwordEye.getAttribute('id')
