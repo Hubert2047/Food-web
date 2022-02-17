@@ -24,46 +24,51 @@
         <a href="" class="header__logo">
             <i class="fa-solid fa-utensils"></i> <span class="header__name">Hresto.</span>
         </a>
-        <nav class="navbar">
+        <nav class="navbar " id='navbar'>
             <ul class="navbar__items">
-                <li class="navbar__item active"><a href="#home" class="navbar__link">Home</a></li>
-                <li class="navbar__item">
-                    <a href="#dishes" class="navbar__link">Dishes</a>
-                </li>
-                <li class="navbar__item"><a class="navbar__link" href="#about">About</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="#menu">Menu</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="#review">Review</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="#order">Order</a></li>
+                <a href='#home' class="navbar__link active">Home</a>
+
+                <a href='#dishes' class="navbar__link">Dishes</a>
+
+                <a class="navbar__link" href='#about'>About</a>
+
+                <a class="navbar__link" href='#menu'>Menu</a>
+
+                <a class="navbar__link" href='#review'>Review</a>
+
+                <a class="navbar__link" href='#order'>Order</a></li>
             </ul>
         </nav>
-        <div class="nav-user">
-            <i class="header__icon fas fa-search" id="search-btn">
-            </i>
+        <i class="header__icon fas fa-search" id="search-btn">
+        </i>
+        <div class="nav-user" id='nav-user'>
+
             <div class="nav-user__icons">
-                <a href="">
+                <a>
                     <i class="fa-solid fa-bell  nav-user__icon">
-                        <span>2</span>
+                        <span></span>
                     </i>
                 </a>
-                <a href="">
+                <a>
                     <i class="fa fa-message nav-user__icon">
-                        <span>8</span>
+                        <span></span>
                     </i>
                 </a>
-                <a href="" id="shopping-cart">
+                <a id="shopping-cart">
                     <i class=" fas fa-shopping-cart nav-user__icon">
+                        <span></span>
                     </i>
                 </a>
 
             </div>
 
-            <img src="/images/hubert.jpg" id="user" class="nav-user__photo" alt="">
+            <img src="images/user-default.png" id="user" class="nav-user__photo" alt="">
 
-            <div class="nav-user__name"><span>Hubert</span></div>
-            <i class="header__icon fas fa-bars" id="menu-bars">
-            </i>
+            <div class="nav-user__name"><span></span></div>
 
         </div>
+        <i class="header__icon fas fa-bars" id='menu-bars'>
+        </i>
     </header>
     <!-- search form -->
     <div class="search">
@@ -74,7 +79,7 @@
         <i class="fas fa-times search__close" id="search__close" "></i>
         </div>
         <!-- home section -->
-        <section class=" home "id=" home ">
+        <section class=" home "id='home '>
             <div class=" sliders ">
                 <div class=" slide ">
                     <div class=" slide__content ">
@@ -175,7 +180,7 @@
             </div>
         </section>
         <!-- dishes section -->
-        <section class=" dishes "id=" dishes ">
+        <section class=" dishes "id='dishes'>
             <h3 class=" heading-h3 section__heading ">our dishes</h3>
             <h2 class=" heading-h2 section__sub-heading ">POPULAR DISHES</h2>
             <div class=" card__container ">
@@ -198,8 +203,8 @@
                             <i class=" fas fa-star-half-alt card__star "></i>
                         </div>
                         <div class=" card__rating ">4.1 out of 5</div>
-                    </div>
-                    <p class=" card__text ">Lorem ipsum dolor sit amet consectetur
+                    </div> 
+                     <p class=" card__text ">Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Facilis repudiandae eveniet
                         exercitationem dolore quia cumque incidunt</p>
                     <div class=" card__price ">$3.99</div>
@@ -344,7 +349,7 @@
             </div>
         </section>
         <!-- about section -->
-        <section class=" about "id=" about ">
+        <section class=" about "id='about'>
             <h3 class=" heading-h3 section__heading ">About Us</h3>
             <h2 class=" heading-h2 section__sub-heading ">WHY CHOOSE US?</h2>
             <div class=" about__box ">
@@ -389,568 +394,511 @@
             </div>
         </section>
         <!--menu section  -->
-        <section class=" menu "id=" menu ">
+        <section class=" menu "id='menu'>
             <h3 class=" heading-h3 section__heading ">Our Menu</h3>
-            <h2 class=" heading-h2 section__sub-heading ">TODAY'S SPECIALITY
-            </h2>
+            <h2 class=" heading-h2 section__sub-heading ">TODAY'S SPECIALITY </h2>
 
-            <div class=" card__container ">
-                <!-- -----------------------card-1 -->
-                <div class=" card__item ">
-                    <div class=" card__icons ">
-                        <a class=" fas fa-eye card__icon "></a>
-                        <a class=" fas fa-heart card__icon "></a>
-                    </div>
-                    <img src=" images/menu-1.jpg "alt=" "class=" card__img ">
-                    <h5 class=" heading-h5 card__heading ">Piza</h5>
-                    <div class=" card__stars ">
-                        <p class=" card__review ">customer review</p>
-                        <div class=" card__star-group ">
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star-half-stroke card__star "></i>
+                    <div class=" card__container ">
+                        <!-- -----------------------card-1 -->
+                        <div class=" card__item ">
+                            <div class=" card__icons ">
+                                <a class=" fas fa-eye card__icon "></a>
+                                <a class=" fas fa-heart card__icon "></a>
+                            </div>
+                            <img src=" images/menu-1.jpg " alt=" " class=" card__img ">
+                            <h5 class=" heading-h5 card__heading ">Piza</h5>
+                            <div class=" card__stars ">
+                                <p class=" card__review ">customer review</p>
+                                <div class=" card__star-group ">
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star-half-stroke card__star "></i>
+                                </div>
+                                <div class=" card__rating ">4.2 out of 5</div>
+                            </div>
+                            <p class=" card__text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repudiandae eveniet exercitationem dolore quia cumque incidunt</p>
+                            <div class=" card__price ">$4.99</div>
+                            <a class=" card__btn btn btn--blue ">Add to card</a>
                         </div>
-                        <div class=" card__rating ">4.2 out of 5</div>
-                    </div>
-                    <p class=" card__text ">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Facilis repudiandae eveniet
-                        exercitationem dolore quia cumque incidunt</p>
-                    <div class=" card__price ">$4.99</div>
-                    <a class=" card__btn btn btn--blue ">Add to card</a>
-                </div>
-                <!-- -----------------------card-2 -->
-                <div class=" card__item ">
-                    <div class=" card__icons ">
-                        <a class=" fas fa-eye card__icon "></a>
-                        <a class=" fas fa-heart card__icon "></a>
-                    </div>
-                    <img src=" images/menu-2.jpg "alt=" "class=" card__img ">
-                    <h5 class=" heading-h5 card__heading ">Burger
-                    </h5>
-                    <div class=" card__stars ">
-                        <p class=" card__review ">customer review</p>
-                        <div class=" card__star-group ">
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star-half-alt card__star "></i>
+                        <!-- -----------------------card-2 -->
+                        <div class=" card__item ">
+                            <div class=" card__icons ">
+                                <a class=" fas fa-eye card__icon "></a>
+                                <a class=" fas fa-heart card__icon "></a>
+                            </div>
+                            <img src=" images/menu-2.jpg " alt=" " class=" card__img ">
+                            <h5 class=" heading-h5 card__heading ">Burger
+                            </h5>
+                            <div class=" card__stars ">
+                                <p class=" card__review ">customer review</p>
+                                <div class=" card__star-group ">
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star-half-alt card__star "></i>
+                                </div>
+                                <div class=" card__rating ">4.6 out of 5</div>
+                            </div>
+                            <p class=" card__text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repudiandae eveniet exercitationem dolore quia cumque incidunt</p>
+                            <div class=" card__price ">$3.99</div>
+                            <a class=" card__btn btn btn--blue ">Add to card</a>
                         </div>
-                        <div class=" card__rating ">4.6 out of 5</div>
-                    </div>
-                    <p class=" card__text ">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Facilis repudiandae eveniet
-                        exercitationem dolore quia cumque incidunt</p>
-                    <div class=" card__price ">$3.99</div>
-                    <a class=" card__btn btn btn--blue ">Add to card</a>
-                </div>
-                <!-- -----------------------card-3 -->
-                <div class=" card__item ">
-                    <div class=" card__icons ">
-                        <a class=" fas fa-eye card__icon "></a>
-                        <a class=" fas fa-heart card__icon "></a>
-                    </div>
-                    <img src=" images/menu-3.jpg "alt=" "class=" card__img ">
-                    <h5 class=" heading-h5 card__heading ">Egg cake
-                    </h5>
-                    <div class=" card__stars ">
-                        <p class=" card__review ">customer review</p>
-                        <div class=" card__star-group ">
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star-half-alt card__star "></i>
+                        <!-- -----------------------card-3 -->
+                        <div class=" card__item ">
+                            <div class=" card__icons ">
+                                <a class=" fas fa-eye card__icon "></a>
+                                <a class=" fas fa-heart card__icon "></a>
+                            </div>
+                            <img src=" images/menu-3.jpg " alt=" " class=" card__img ">
+                            <h5 class=" heading-h5 card__heading ">Egg cake
+                            </h5>
+                            <div class=" card__stars ">
+                                <p class=" card__review ">customer review</p>
+                                <div class=" card__star-group ">
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star-half-alt card__star "></i>
+                                </div>
+                                <div class=" card__rating ">4.2 out of 5</div>
+                            </div>
+                            <p class=" card__text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repudiandae eveniet exercitationem dolore quia cumque incidunt</p>
+                            <div class=" card__price ">$4.99</div>
+                            <a class=" card__btn btn btn--blue ">Add to card</a>
                         </div>
-                        <div class=" card__rating ">4.2 out of 5</div>
-                    </div>
-                    <p class=" card__text ">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Facilis repudiandae eveniet
-                        exercitationem dolore quia cumque incidunt</p>
-                    <div class=" card__price ">$4.99</div>
-                    <a class=" card__btn btn btn--blue ">Add to card</a>
-                </div>
-                <!-- -----------------------card-4 -->
-                <div class=" card__item ">
-                    <div class=" card__icons ">
-                        <a class=" fas fa-eye card__icon "></a>
-                        <a class=" fas fa-heart card__icon "></a>
-                    </div>
-                    <img src=" images/menu-4.jpg "alt=" "class=" card__img ">
-                    <h5 class=" heading-h5 card__heading ">Sweet Cream Cake
-                    </h5>
-                    <div class=" card__stars ">
-                        <p class=" card__review ">customer review</p>
-                        <div class=" card__star-group ">
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star-half-alt card__star "></i>
+                        <!-- -----------------------card-4 -->
+                        <div class=" card__item ">
+                            <div class=" card__icons ">
+                                <a class=" fas fa-eye card__icon "></a>
+                                <a class=" fas fa-heart card__icon "></a>
+                            </div>
+                            <img src=" images/menu-4.jpg " alt=" " class=" card__img ">
+                            <h5 class=" heading-h5 card__heading ">Sweet Cream Cake
+                            </h5>
+                            <div class=" card__stars ">
+                                <p class=" card__review ">customer review</p>
+                                <div class=" card__star-group ">
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star-half-alt card__star "></i>
+                                </div>
+                                <div class=" card__rating ">4.4 out of 5</div>
+                            </div>
+                            <p class=" card__text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repudiandae eveniet exercitationem dolore quia cumque incidunt</p>
+                            <div class=" card__price ">$8.99</div>
+                            <a class=" card__btn btn btn--blue ">Add to card</a>
                         </div>
-                        <div class=" card__rating ">4.4 out of 5</div>
-                    </div>
-                    <p class=" card__text ">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Facilis repudiandae eveniet
-                        exercitationem dolore quia cumque incidunt</p>
-                    <div class=" card__price ">$8.99</div>
-                    <a class=" card__btn btn btn--blue ">Add to card</a>
-                </div>
 
-                <!-- -----------------------card-5 -->
-                <div class=" card__item ">
-                    <div class=" card__icons ">
-                        <a class=" fas fa-eye card__icon "></a>
-                        <a class=" fas fa-heart card__icon "></a>
-                    </div>
-                    <img src=" images/menu-5.jpg "alt=" "class=" card__img ">
-                    <h5 class=" heading-h5 card__heading ">Whipping Cream Cake
-                    </h5>
-                    <div class=" card__stars ">
-                        <p class=" card__review ">customer review</p>
-                        <div class=" card__star-group ">
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star-half-alt card__star "></i>
+                        <!-- -----------------------card-5 -->
+                        <div class=" card__item ">
+                            <div class=" card__icons ">
+                                <a class=" fas fa-eye card__icon "></a>
+                                <a class=" fas fa-heart card__icon "></a>
+                            </div>
+                            <img src=" images/menu-5.jpg " alt=" " class=" card__img ">
+                            <h5 class=" heading-h5 card__heading ">Whipping Cream Cake
+                            </h5>
+                            <div class=" card__stars ">
+                                <p class=" card__review ">customer review</p>
+                                <div class=" card__star-group ">
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star-half-alt card__star "></i>
+                                </div>
+                                <div class=" card__rating ">4.5 out of 5</div>
+                            </div>
+                            <p class=" card__text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repudiandae eveniet exercitationem dolore quia cumque incidunt</p>
+                            <div class=" card__price ">$5.99</div>
+                            <a class=" card__btn btn btn--blue ">Add to card</a>
                         </div>
-                        <div class=" card__rating ">4.5 out of 5</div>
-                    </div>
-                    <p class=" card__text ">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Facilis repudiandae eveniet
-                        exercitationem dolore quia cumque incidunt</p>
-                    <div class=" card__price ">$5.99</div>
-                    <a class=" card__btn btn btn--blue ">Add to card</a>
-                </div>
 
-                <!-- -----------------------card-6 -->
-                <div class=" card__item ">
-                    <div class=" card__icons ">
-                        <a class=" fas fa-eye card__icon "></a>
-                        <a class=" fas fa-heart card__icon "></a>
-                    </div>
-                    <img src=" images/menu-6.jpg "alt=" "class=" card__img ">
-                    <h5 class=" heading-h5 card__heading ">Cinnamon ice cream
-                    </h5>
-                    <div class=" card__stars ">
-                        <p class=" card__review ">customer review</p>
-                        <div class=" card__star-group ">
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star-half-alt card__star "></i>
+                        <!-- -----------------------card-6 -->
+                        <div class=" card__item ">
+                            <div class=" card__icons ">
+                                <a class=" fas fa-eye card__icon "></a>
+                                <a class=" fas fa-heart card__icon "></a>
+                            </div>
+                            <img src=" images/menu-6.jpg " alt=" " class=" card__img ">
+                            <h5 class=" heading-h5 card__heading ">Cinnamon ice cream
+                            </h5>
+                            <div class=" card__stars ">
+                                <p class=" card__review ">customer review</p>
+                                <div class=" card__star-group ">
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star-half-alt card__star "></i>
+                                </div>
+                                <div class=" card__rating ">4.8 out of 5</div>
+                            </div>
+                            <p class=" card__text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repudiandae eveniet exercitationem dolore quia cumque incidunt</p>
+                            <div class=" card__price ">$6.99</div>
+                            <a class=" card__btn btn btn--blue ">Add to card</a>
                         </div>
-                        <div class=" card__rating ">4.8 out of 5</div>
-                    </div>
-                    <p class=" card__text ">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Facilis repudiandae eveniet
-                        exercitationem dolore quia cumque incidunt</p>
-                    <div class=" card__price ">$6.99</div>
-                    <a class=" card__btn btn btn--blue ">Add to card</a>
-                </div>
 
-                <!-- -----------------------card-7 -->
-                <div class=" card__item ">
-                    <div class=" card__icons ">
-                        <a class=" fas fa-eye card__icon "></a>
-                        <a class=" fas fa-heart card__icon "></a>
-                    </div>
-                    <img src=" images/menu-7.jpg "alt=" "class=" card__img ">
-                    <h5 class=" heading-h5 card__heading ">juice
-                    </h5>
-                    <div class=" card__stars ">
-                        <p class=" card__review ">customer review</p>
-                        <div class=" card__star-group ">
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star-half-alt card__star "></i>
+                        <!-- -----------------------card-7 -->
+                        <div class=" card__item ">
+                            <div class=" card__icons ">
+                                <a class=" fas fa-eye card__icon "></a>
+                                <a class=" fas fa-heart card__icon "></a>
+                            </div>
+                            <img src=" images/menu-7.jpg " alt=" " class=" card__img ">
+                            <h5 class=" heading-h5 card__heading ">juice
+                            </h5>
+                            <div class=" card__stars ">
+                                <p class=" card__review ">customer review</p>
+                                <div class=" card__star-group ">
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star-half-alt card__star "></i>
+                                </div>
+                                <div class=" card__rating ">4.3 out of 5</div>
+                            </div>
+                            <p class=" card__text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repudiandae eveniet exercitationem dolore quia cumque incidunt</p>
+                            <div class=" card__price ">$2.99</div>
+                            <a class=" card__btn btn btn--blue ">Add to card</a>
                         </div>
-                        <div class=" card__rating ">4.3 out of 5</div>
-                    </div>
-                    <p class=" card__text ">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Facilis repudiandae eveniet
-                        exercitationem dolore quia cumque incidunt</p>
-                    <div class=" card__price ">$2.99</div>
-                    <a class=" card__btn btn btn--blue ">Add to card</a>
-                </div>
 
-                <!-- -----------------------card-8 -->
-                <div class=" card__item ">
-                    <div class=" card__icons ">
-                        <a class=" fas fa-eye card__icon "></a>
-                        <a class=" fas fa-heart card__icon "></a>
-                    </div>
-                    <img src=" images/menu-8.jpg "alt=" "class=" card__img ">
-                    <h5 class=" heading-h5 card__heading ">Dried Fruit
-                    </h5>
-                    <div class=" card__stars ">
-                        <p class=" card__review ">customer review</p>
-                        <div class=" card__star-group ">
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star-half-alt card__star "></i>
+                        <!-- -----------------------card-8 -->
+                        <div class=" card__item ">
+                            <div class=" card__icons ">
+                                <a class=" fas fa-eye card__icon "></a>
+                                <a class=" fas fa-heart card__icon "></a>
+                            </div>
+                            <img src=" images/menu-8.jpg " alt=" " class=" card__img ">
+                            <h5 class=" heading-h5 card__heading ">Dried Fruit
+                            </h5>
+                            <div class=" card__stars ">
+                                <p class=" card__review ">customer review</p>
+                                <div class=" card__star-group ">
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star-half-alt card__star "></i>
+                                </div>
+                                <div class=" card__rating ">4.2 out of 5</div>
+                            </div>
+                            <p class=" card__text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repudiandae eveniet exercitationem dolore quia cumque incidunt</p>
+                            <div class=" card__price ">$8.99</div>
+                            <a class=" card__btn btn btn--blue ">Add to card</a>
                         </div>
-                        <div class=" card__rating ">4.2 out of 5</div>
-                    </div>
-                    <p class=" card__text ">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Facilis repudiandae eveniet
-                        exercitationem dolore quia cumque incidunt</p>
-                    <div class=" card__price ">$8.99</div>
-                    <a class=" card__btn btn btn--blue ">Add to card</a>
-                </div>
 
-                <!-- -----------------------card-9 -->
-                <div class=" card__item ">
-                    <div class=" card__icons ">
-                        <a class=" fas fa-eye card__icon "></a>
-                        <a class=" fas fa-heart card__icon "></a>
-                    </div>
-                    <img src=" images/menu-9.jpg "alt=" "class=" card__img ">
-                    <h5 class=" heading-h5 card__heading ">
-                        Orange juice
-                    </h5>
-                    <div class=" card__stars ">
-                        <p class=" card__review ">customer review</p>
-                        <div class=" card__star-group ">
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
-                            <i class=" fas fa-star card__star "></i>
+                        <!-- -----------------------card-9 -->
+                        <div class=" card__item ">
+                            <div class=" card__icons ">
+                                <a class=" fas fa-eye card__icon "></a>
+                                <a class=" fas fa-heart card__icon "></a>
+                            </div>
+                            <img src=" images/menu-9.jpg " alt=" " class=" card__img ">
+                            <h5 class=" heading-h5 card__heading ">
+                                Orange juice
+                            </h5>
+                            <div class=" card__stars ">
+                                <p class=" card__review ">customer review</p>
+                                <div class=" card__star-group ">
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                    <i class=" fas fa-star card__star "></i>
+                                </div>
+                                <div class=" card__rating ">5 out of 5</div>
+                            </div>
+                            <p class=" card__text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repudiandae eveniet exercitationem dolore quia cumque incidunt</p>
+                            <div class=" card__price ">$4.99</div>
+                            <a class=" card__btn btn btn--blue ">Add to card</a>
                         </div>
-                        <div class=" card__rating ">5 out of 5</div>
+
+
+
                     </div>
-                    <p class=" card__text ">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Facilis repudiandae eveniet
-                        exercitationem dolore quia cumque incidunt</p>
-                    <div class=" card__price ">$4.99</div>
-                    <a class=" card__btn btn btn--blue ">Add to card</a>
-                </div>
 
-
-
-            </div>
-
-        </section>
-        <!-- new product -->
-        <section class=" order " id=" order ">
+                    </section>
+                    <!-- new product -->
+                    <!-- <section class=" order " id='order'>
             <h3 class=" heading-h3 section__heading ">New Product</h3>
             <h2 class=" heading-h2 section__sub-heading ">Exciting Food</h2>
-            </section>
-            <!-- end new product -->
-        <!-- review section -->
-        <section class=" review "id=" review ">
-            <h3 class=" heading-h3 section__heading ">Customer's Review</h3>
-            <h2 class=" heading-h2 section__sub-heading ">WHAT THEY SAY</h2>
+            </section> -->
+                    <!-- end new product -->
+                    <!-- review section -->
+                    <section class=" review " id='review'>
+                        <h3 class=" heading-h3 section__heading ">Customer's Review</h3>
+                        <h2 class=" heading-h2 section__sub-heading ">WHAT THEY SAY</h2>
 
-            <!-- star swipper card-review -->
-            <div #swiperRef=" "class=" swiper mySwiper ">
-                <div class=" swiper-wrapper ">
-                    <!-- -----------------------------slider-1 -->
-                    <div class=" swiper-slide card-review ">
-                        <img src=" images/hubert.jpg "alt=" "class=" card-review__img ">
-                        <div class=" card-review__user ">
-                            <p class=" card-review__user-name ">Hubert </p>
-                            <div class=" card-review__star-group ">
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star-half-alt card-review__star "></i>
+                        <!-- star swipper card-review -->
+                        <div #swiperRef=" " class=" swiper mySwiper ">
+                            <div class=" swiper-wrapper ">
+                                <!-- -----------------------------slider-1 -->
+                                <div class=" swiper-slide card-review ">
+                                    <img src=" images/hubert.jpg " alt=" " class=" card-review__img ">
+                                    <div class=" card-review__user ">
+                                        <p class=" card-review__user-name ">Hubert </p>
+                                        <div class=" card-review__star-group ">
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star-half-alt card-review__star "></i>
+                                        </div>
+                                    </div>
+                                    <i class=" fas fa-quote-right card-review__quote "></i>
+                                    <p class=" card-review__text ">Visited as a guest in the Echo restaurant for lunch just today. We were entertaining friends from California, and enjoyed our ocean side table. We chose to stay indoors - to enjoy the air conditioning 😊. I just want
+                                        to say that, in addition to a nice meal, we had a delightful waitress, Jackie. She had just the right balance of friendliness and efficiency. She recognized that we wanted time to visit and did not rush us. </p>
+                                </div>
+                                <!-- -----------------------------slider-2 -->
+                                <div class=" swiper-slide card-review ">
+                                    <img src=" images/pic-1.png " alt=" " class=" card-review__img ">
+                                    <div class=" card-review__user ">
+                                        <p class=" card-review__user-name ">Marcus</p>
+                                        <div class=" card-review__star-group ">
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star-half-alt card-review__star "></i>
+                                        </div>
+                                    </div>
+                                    <i class=" fas fa-quote-right card-review__quote "></i>
+                                    <p class=" card-review__text ">We had lunch here a few times while on the island visiting family and friends. The servers here are just wonderful and have great memories it seems. We sat on the ocean front patio and enjoyed the view with our delicious
+                                        wine and lunch. Must try!</p>
+                                </div>
+                                <!-- -----------------------------slider-3 -->
+                                <div class=" swiper-slide card-review ">
+                                    <img src=" images/pic-2.png " alt=" " class=" card-review__img ">
+                                    <div class=" card-review__user ">
+                                        <p class=" card-review__user-name ">Kaylin</p>
+                                        <div class=" card-review__star-group ">
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star-half-alt card-review__star "></i>
+                                        </div>
+                                    </div>
+                                    <i class=" fas fa-quote-right card-review__quote "></i>
+                                    <p class=" card-review__text ">Hello. Please give our thanks to the Manager(s) and others for the wonderful room and bottle of sparkling wine for our Anniversary stay. We had an amazing time. The room was so comfortable, the food at Echo absolutely
+                                        spectacular (we ate two meals there). Our waitress was just wonderful. Looking forward to staying with you in the future. What a great place!</p>
+                                </div>
+                                <!-- -----------------------------slider-4 -->
+                                <div class=" swiper-slide card-review ">
+                                    <img src=" images/pic-3.png " alt=" " class=" card-review__img ">
+                                    <div class=" card-review__user ">
+                                        <p class=" card-review__user-name ">Richard</p>
+                                        <div class=" card-review__star-group ">
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star-half-alt card-review__star "></i>
+                                        </div>
+                                    </div>
+                                    <i class=" fas fa-quote-right card-review__quote "></i>
+                                    <p class=" card-review__text ">Rachel at the Pool (drinks server) was so gorgeous. We chatted with her all weekend and she played with the kids. She's an asset to the hotel esp for people with families. I saw other attendants playing with the kids
+                                        too which is so welcoming. Rachel was gorgeous. Give her a raise!</p>
+                                </div>
+
+                                <!-- -----------------------------slider-5 -->
+                                <div class=" swiper-slide card-review ">
+                                    <img src=" images/pic-4.png " alt=" " class=" card-review__img ">
+                                    <div class=" card-review__user ">
+                                        <p class=" card-review__user-name ">Dulcie</p>
+                                        <div class=" card-review__star-group ">
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star-half-alt card-review__star "></i>
+                                        </div>
+                                    </div>
+                                    <i class=" fas fa-quote-right card-review__quote "></i>
+                                    <p class=" card-review__text ">I had lunch with some of my colleagues at Echo on Day 1. I had the wedge salad - it was delicious. On Night 2, I enjoyed a drink at the bar. I had a Margarita. The service was excellent.
+                                    </p>
+                                </div>
+
+                                <!-- -----------------------------slider-6 -->
+                                <div class=" swiper-slide card-review ">
+                                    <img src=" images/pic-5.jpeg " alt=" " class=" card-review__img ">
+                                    <div class=" card-review__user ">
+                                        <p class=" card-review__user-name ">Drake</p>
+                                        <div class=" card-review__star-group ">
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star-half-alt card-review__star "></i>
+                                        </div>
+                                    </div>
+                                    <i class=" fas fa-quote-right card-review__quote "></i>
+                                    <p class=" card-review__text ">Dinner in the King and Prince's new restaurant-ECHO (open only 12 days) interesting menu, wonderful meal that was perfectly served by our waiter, Peter, who also filled us in on the local community. Room service breakfast
+                                        was exactly on time, hot (not warm) food and oh so good. All in all, a perfect stay!!</p>
+                                </div>
+
+                                <!-- -----------------------------slider-7 -->
+                                <div class=" swiper-slide card-review ">
+                                    <img src=" images/pic-6.jpeg " alt=" " class=" card-review__img ">
+                                    <div class=" card-review__user ">
+                                        <p class=" card-review__user-name ">Kim </p>
+                                        <div class=" card-review__star-group ">
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star-half-alt card-review__star "></i>
+                                        </div>
+                                    </div>
+                                    <i class=" fas fa-quote-right card-review__quote "></i>
+                                    <p class=" card-review__text ">The food was absolutely wonderful, from preparation to presentation, very pleasing. We especially enjoyed the special bar drinks, the cucumber/cilantro infused vodka martini and the K&P Aquarium was great (even took
+                                        photos so we could try to replicate at home).</p>
+                                </div>
+
+                                <!-- -----------------------------slider-7 -->
+                                <div class=" swiper-slide card-review ">
+                                    <img src=" images/pic-7.jpeg " alt=" " class=" card-review__img ">
+                                    <div class=" card-review__user ">
+                                        <p class=" card-review__user-name ">Ryder</p>
+                                        <div class=" card-review__star-group ">
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star card-review__star "></i>
+                                            <i class=" fas fa-star-half-alt card-review__star "></i>
+                                        </div>
+                                    </div>
+                                    <i class=" fas fa-quote-right card-review__quote "></i>
+                                    <p class=" card-review__text ">Although we didn't go into the onsite restaurant, we ordered some food at the bar a few times and it was delicious. The bar area and lobby were nice and open, good place to relax and meet friends.</p>
+                                </div>
+
+
                             </div>
+                            <div class=" swiper-pagination "></div>
                         </div>
-                        <i class=" fas fa-quote-right card-review__quote "></i>
-                        <p class=" card-review__text ">Visited as a guest in the
-                            Echo restaurant for lunch just today. We were
-                            entertaining friends from California, and enjoyed
-                            our ocean side table. We chose to stay indoors - to
-                            enjoy the air conditioning 😊. I just want to say
-                            that, in addition to a nice meal, we had a
-                            delightful waitress, Jackie. She had just the right
-                            balance of friendliness and efficiency. She
-                            recognized that we wanted time to visit and did not
-                            rush us. </p>
-                    </div>
-                    <!-- -----------------------------slider-2 -->
-                    <div class=" swiper-slide card-review ">
-                        <img src=" images/pic-1.png "alt=" "class=" card-review__img ">
-                        <div class=" card-review__user ">
-                            <p class=" card-review__user-name ">Marcus</p>
-                            <div class=" card-review__star-group ">
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star-half-alt card-review__star "></i>
-                            </div>
+                        <!-- end swipper card-review -->
                         </div>
-                        <i class=" fas fa-quote-right card-review__quote "></i>
-                        <p class=" card-review__text ">We had lunch here a few
-                            times while on the island visiting family and
-                            friends. The servers here are just wonderful and
-                            have great memories it seems. We sat on the ocean
-                            front patio and enjoyed the view with our delicious
-                            wine and lunch. Must try!</p>
-                    </div>
-                    <!-- -----------------------------slider-3 -->
-                    <div class=" swiper-slide card-review ">
-                        <img src=" images/pic-2.png "alt=" "class=" card-review__img ">
-                        <div class=" card-review__user ">
-                            <p class=" card-review__user-name ">Kaylin</p>
-                            <div class=" card-review__star-group ">
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star-half-alt card-review__star "></i>
-                            </div>
-                        </div>
-                        <i class=" fas fa-quote-right card-review__quote "></i>
-                        <p class=" card-review__text ">Hello. Please give our
-                            thanks to the Manager(s) and others for the
-                            wonderful room and bottle of sparkling wine for our
-                            Anniversary stay. We had an amazing time. The room
-                            was so comfortable, the food at Echo absolutely
-                            spectacular (we ate two meals there). Our waitress
-                            was just wonderful. Looking forward to staying with
-                            you in the future. What a great place!</p>
-                    </div>
-                    <!-- -----------------------------slider-4 -->
-                    <div class=" swiper-slide card-review ">
-                        <img src=" images/pic-3.png "alt=" "class=" card-review__img ">
-                        <div class=" card-review__user ">
-                            <p class=" card-review__user-name ">Richard</p>
-                            <div class=" card-review__star-group ">
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star-half-alt card-review__star "></i>
-                            </div>
-                        </div>
-                        <i class=" fas fa-quote-right card-review__quote "></i>
-                        <p class=" card-review__text ">Rachel at the Pool (drinks
-                            server) was so gorgeous. We chatted with her all
-                            weekend and she played with the kids. She's an asset
-                            to the hotel esp for people with families. I saw
-                            other attendants playing with the kids too which is
-                            so welcoming. Rachel was gorgeous. Give her a raise!</p>
-                    </div>
-
-                    <!-- -----------------------------slider-5 -->
-                    <div class=" swiper-slide card-review ">
-                        <img src=" images/pic-4.png "alt=" "class=" card-review__img ">
-                        <div class=" card-review__user ">
-                            <p class=" card-review__user-name ">Dulcie</p>
-                            <div class=" card-review__star-group ">
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star-half-alt card-review__star "></i>
-                            </div>
-                        </div>
-                        <i class=" fas fa-quote-right card-review__quote "></i>
-                        <p class=" card-review__text ">I had lunch with some of my
-                            colleagues at Echo on Day 1. I had the wedge salad -
-                            it was delicious. On Night 2, I enjoyed a drink at
-                            the bar. I had a Margarita. The service was
-                            excellent.</p>
-                    </div>
-
-                    <!-- -----------------------------slider-6 -->
-                    <div class=" swiper-slide card-review ">
-                        <img src=" images/pic-5.jpeg "alt=" "class=" card-review__img ">
-                        <div class=" card-review__user ">
-                            <p class=" card-review__user-name ">Drake</p>
-                            <div class=" card-review__star-group ">
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star-half-alt card-review__star "></i>
-                            </div>
-                        </div>
-                        <i class=" fas fa-quote-right card-review__quote "></i>
-                        <p class=" card-review__text ">Dinner in the King and
-                            Prince's new restaurant-ECHO (open only 12 days)
-                            interesting menu, wonderful meal that was perfectly
-                            served by our waiter, Peter, who also filled us in
-                            on the local community. Room service breakfast was
-                            exactly on time, hot (not warm) food and oh so good.
-                            All in all, a perfect stay!!</p>
-                    </div>
-
-                    <!-- -----------------------------slider-7 -->
-                    <div class=" swiper-slide card-review ">
-                        <img src=" images/pic-6.jpeg "alt=" "class=" card-review__img ">
-                        <div class=" card-review__user ">
-                            <p class=" card-review__user-name ">Kim </p>
-                            <div class=" card-review__star-group ">
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star-half-alt card-review__star "></i>
-                            </div>
-                        </div>
-                        <i class=" fas fa-quote-right card-review__quote "></i>
-                        <p class=" card-review__text ">The food was absolutely
-                            wonderful, from preparation to presentation, very
-                            pleasing. We especially enjoyed the special bar
-                            drinks, the cucumber/cilantro infused vodka martini
-                            and the K&P Aquarium was great (even took photos so
-                            we could try to replicate at home).</p>
-                    </div>
-
-                    <!-- -----------------------------slider-7 -->
-                    <div class=" swiper-slide card-review ">
-                        <img src=" images/pic-7.jpeg "alt=" "class=" card-review__img ">
-                        <div class=" card-review__user ">
-                            <p class=" card-review__user-name ">Ryder</p>
-                            <div class=" card-review__star-group ">
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star card-review__star "></i>
-                                <i class=" fas fa-star-half-alt card-review__star "></i>
-                            </div>
-                        </div>
-                        <i class=" fas fa-quote-right card-review__quote "></i>
-                        <p class=" card-review__text ">Although we didn't go into
-                            the onsite restaurant, we ordered some food at the
-                            bar a few times and it was delicious. The bar area
-                            and lobby were nice and open, good place to relax
-                            and meet friends.</p>
-                    </div>
 
 
-                </div>
-                <div class=" swiper-pagination "></div>
-            </div>
-            <!-- end swipper card-review -->
-        </div>
+                    </section>
 
+                    <section class='order' id='order'>
+                        <h3 class=" heading-h3 section__heading ">Order Now</h3>
+                        <h2 class=" heading-h2 section__sub-heading ">FREE AND FAST</h2>
+                    </section>
 
-    </section>
-
-    <section class=" order "id=" order ">
-        <h3 class=" heading-h3 section__heading ">Order Now</h3>
-        <h2 class=" heading-h2 section__sub-heading ">FREE AND FAST</h2>
-        </section>
-   
-<!-- footer -->
-        <footer class="footer ">
-            <div class="footer__nav ">
-                <ul class="footer__nav-list ">
-                    <li class="footer__nav-item ">
-                        <a class="footer__nav-link ">All Categories</a>
-                    </li>
-                    <li class="footer__nav-item ">
-                        <a class="footer__nav-link "> Visitor Agreement</a>
-                    </li>
-                    <li class="footer__nav-item ">
-                        <a class="footer__nav-link ">Privacy Notice</a>
-                    </li>
+                    <!-- footer -->
+                    <footer class="footer ">
+                        <div class="footer__nav ">
+                            <ul class="footer__nav-list ">
+                                <li class="footer__nav-item ">
+                                    <a class="footer__nav-link ">All Categories</a>
+                                </li>
+                                <li class="footer__nav-item ">
+                                    <a class="footer__nav-link "> Visitor Agreement</a>
+                                </li>
+                                <li class="footer__nav-item ">
+                                    <a class="footer__nav-link ">Privacy Notice</a>
+                                </li>
                 </li>
                 <li class="footer__nav-item ">
                     <a class="footer__nav-link ">Advertise</a>
                 </li>
-            </li>
-            <li class="footer__nav-item ">
-                <a class="footer__nav-link "> Site Map</a>
-            </li>
-                    <li class="footer__nav-item ">
-                        <a class="footer__nav-link ">Help</a>
-                    </li>
+                </li>
+                <li class="footer__nav-item ">
+                    <a class="footer__nav-link "> Site Map</a>
+                </li>
+                <li class="footer__nav-item ">
+                    <a class="footer__nav-link ">Help</a>
+                </li>
                 </ul>
-            </div>
-            <div class="contact ">
-                <div class="contact__wrapper ">
-                    <div class="contact__icons ">
-                        <i class="fa-brands fa-line contact__icon "></i>
-                        <i class="fa-brands fa-facebook contact__icon "></i>
-                        <i class="fa-brands fa-instagram-square contact__icon "></i>
-                        <i class="fa-brands fa-viber contact__icon "></i>
-                        <i class="fa-brands fa-skype contact__icon "></i>
-                        <i class="fa-brands fa-youtube contact__icon "></i>
-                        <i class="fa-brands fa-twitter contact__icon "></i>
-                    </div>
-                    <div class="contact__information ">
-                        <p class="contact__address ">
-                    
-                            <i class="fa-solid fa-location-dot contact__information-icon "></i>
-                            <span>address:</span>
-                            <span>Taipei, TaiWan</span>
-                        </p>
-                        <p class="contact__phone ">
-                            <i class="fa-solid fa-phone contact__information-icon "></i>
-                            <span>phone:</span>
-                            <span>(+886) 0976859116</span>
-                        </p>
-                        <p class="contact__email ">
-                            <i class="fa-solid fa-envelope contact__information-icon "></i>
-                            <span>Email:</span>
-                            <span>hubert2047@gmail.com</span>
-                        </p>
-                        <p class="contact_time ">
-                            <i class="fa-solid fa-clock contact__information-icon "></i>
-                            <span>Open Time:</span>
-                            <span>(Mon ~ Sat) 10:00~12:00/13:30~22:00</span>
-                        </p>
-                    </div>
-                    <div class="contact__payment ">
-                        <i class="fa-solid fa-money-check-dollar "></i>
-                        <span>Online Payment : </span>
-                        <div class="contact__payment-box ">
-                            <a href=" https://play.google.com/store/apps/details?id=wsj.reader_sp ">
-                                <i class="fa-brands fa-google-pay contact__payment-icon "></i>
-                            </a>
-                            <a href="https://www.apple.com/tw/apple-pay/ ">
-                                <i class="fa-brands fa-apple-pay contact__payment-icon "></i>
+                </div>
+                <div class="contact ">
+                    <div class="contact__wrapper ">
+                        <div class="contact__icons ">
+                            <i class="fa-brands fa-line contact__icon "></i>
+                            <i class="fa-brands fa-facebook contact__icon "></i>
+                            <i class="fa-brands fa-instagram-square contact__icon "></i>
+                            <i class="fa-brands fa-viber contact__icon "></i>
+                            <i class="fa-brands fa-skype contact__icon "></i>
+                            <i class="fa-brands fa-youtube contact__icon "></i>
+                            <i class="fa-brands fa-twitter contact__icon "></i>
+                        </div>
+                        <div class="contact__information ">
+                            <p class="contact__address ">
 
-                            </a>
-                            <a href="https://www.paypal.com/tw/webapps/mpp/pay-on-ebay ">
+                                <i class="fa-solid fa-location-dot contact__information-icon "></i>
+                                <span>address:</span>
+                                <span>Taipei, TaiWan</span>
+                            </p>
+                            <p class="contact__phone ">
+                                <i class="fa-solid fa-phone contact__information-icon "></i>
+                                <span>phone:</span>
+                                <span>(+886) 0976859116</span>
+                            </p>
+                            <p class="contact__email ">
+                                <i class="fa-solid fa-envelope contact__information-icon "></i>
+                                <span>Email:</span>
+                                <span>hubert2047@gmail.com</span>
+                            </p>
+                            <p class="contact_time ">
+                                <i class="fa-solid fa-clock contact__information-icon "></i>
+                                <span>Open Time:</span>
+                                <span>(Mon ~ Sat) 10:00~12:00/13:30~22:00</span>
+                            </p>
+                        </div>
+                        <div class="contact__payment ">
+                            <i class="fa-solid fa-money-check-dollar "></i>
+                            <span>Online Payment : </span>
+                            <div class="contact__payment-box ">
+                                <a href=" https://play.google.com/store/apps/details?id=wsj.reader_sp ">
+                                    <i class="fa-brands fa-google-pay contact__payment-icon "></i>
+                                </a>
+                                <a href="https://www.apple.com/tw/apple-pay/ ">
+                                    <i class="fa-brands fa-apple-pay contact__payment-icon "></i>
 
-                                <i class="fa-brands fa-ebay contact__payment-icon "></i>
-                            </a>
-                            <i class="fa-brands fa-paypal contact__payment-icon "></i>
+                                </a>
+                                <a href="https://www.paypal.com/tw/webapps/mpp/pay-on-ebay ">
+
+                                    <i class="fa-brands fa-ebay contact__payment-icon "></i>
+                                </a>
+                                <i class="fa-brands fa-paypal contact__payment-icon "></i>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="copyright ">COPYRIGHT©OB DESIGN By Hubert CO.,LTD. ALL RIGHTS RESERVED. (Ver.1.3.3.1)</div>
-           
-        </footer>
-        <!-- loader -->
-        <div class=" loader " id=" loader ">
+                <div class="copyright ">COPYRIGHT©OB DESIGN By Hubert CO.,LTD. ALL RIGHTS RESERVED. (Ver.1.3.3.1)</div>
+
+                </footer>
+                <!-- loader -->
+                <!-- <div class=" loader " id=" loader ">
             <img src=" images/loader.gif " alt=" " class=" loader__img--fruit ">
-    </div>
-   <!-- LOGIN  -->
-      <div class="login ">
-            <div class="login__form ">
-                <div class="login__signin-signup ">
-                       <!-- form-sign-in -->
-                    <form action=" " class="login__sign-form login__sign-in ">
-                        <h2 class="login__title ">Sign in</h2>
-                        <div class="login__input-field ">
-                            <input type="text " class="login__input input " placeholder="Username " required>
-                            <i class="fas fa-user login__input-icon input-icon "></i>
-                        </div>
-                        <div class="login__input-field "> 
-                            <i class="fas fa-eye login__input-icon login__input-icon--eye "></i>       
-                            <input type="password " class="login__input input " placeholder=Password " required>
+    </div> -->
+                <!-- LOGIN  -->
+                <div class="login ">
+                    <div class="login__form ">
+                        <div class="login__signin-signup ">
+                            <!-- form-sign-in -->
+                            <form action=" " class="login__sign-form login__sign-in ">
+                                <h2 class="login__title ">Sign in</h2>
+                                <div class="login__input-field ">
+                                    <input type='text' class="login__input " value='admin' id='account' placeholder="Username:Admin " required>
+                                    <i class="fas fa-user login__input-icon input-icon "></i>
+                                </div>
+                                <div class="login__input-field ">
+                                    <i class="fas fa-eye login__input-icon login__eye " id='login-eye-1'></i>
+                                    <input type='password' class="login__input " value='admin' id='password' placeholder=Password:Admin " required>
         <i class="fas fa-lock login__input-icon input-icon "></i>
     </div>
-    <button class="btn btn--light-blue " id="login__btn">Login</button>
+    <button class="btn btn--light-blue " type='button' id='login__btn'>Login</button>
     <p class="login__social-text ">Or Sign in with social platforms</p>
     <div class="login__social-media ">
         <a class="login__social-icon ">
@@ -971,22 +919,23 @@
     <form action=" " class="login__sign-form login__sign-up ">
         <h2 class="login__title ">Sign up</h2>
         <div class="login__input-field ">
-            <input type="email " class="login__input input " placeholder="Enter email " required>
+            <input type='email' class="login__input  " placeholder="Enter email " required>
             <i class="fas fa-envelope login__input-icon input-icon "></i>
         </div>
         <div class="login__input-field ">
-            <input type="text " class="login__input input " placeholder="Enter username " required>
+            <input type="text " class="login__input  " placeholder="Enter username " required>
             <i class="fas fa-user login__input-icon input-icon "></i>
         </div>
         <div class="login__input-field ">
-            <i class="fas fa-eye login__input-icon login__input-icon--eye "></i>
-            <input type="password " class="login__input input " placeholder="Enter password " required>
+            <i class="fas fa-eye login__input-icon login__eye " id='login-eye-2'></i>
+            <input type='password' class="login__input  " placeholder="Enter password " required>
             <i class="fas fa-lock login__input-icon input-icon "></i>
         </div>
 
         <div class="login__input-field ">
-            <i class="fas fa-eye login__input-icon login__input-icon--eye "></i>
-            <input type="password " class="login__input input " placeholder="Re-enter the password " required>
+            <i class="fas fa-eye login__input-icon login__eye " id='login-eye-3'></i>
+            <input type='password' class="login__input " placeholder="Re-enter the password " required>
+            <!-- cho thẻ icon dưới thẻ input để khi add class valid vào thẻ input thì từ đó có thể select dc thẻ icon rồi css cho nó -->
             <i class="fas fa-lock login__input-icon input-icon "></i>
 
         </div>

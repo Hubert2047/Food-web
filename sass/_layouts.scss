@@ -37,6 +37,10 @@
                font-size: 2.5rem;
                color: $color-primary;
                cursor: default;
+               @include respond(tab-land) {
+                   flex: 1;
+               }
+               text-align: left;
            }
            &__name {
                color: $color-black;
@@ -91,21 +95,15 @@
                    gap: 1em;
                }
            }
-           &__item {
-               font-size: 1.5rem;
-               border-radius: 5px;
+           &__link {
+               color: $color-tertiary;
+               text-transform: capitalize;
+               height: 100%;
                padding: .5rem 1.5rem;
+               width: 100%;
+               border-radius: 5px;
+               font-size: 1.5rem;
                cursor: pointer;
-               &:hover {
-                   background-color: $color-primary;
-                   & .navbar__link {
-                       color: $color-white;
-                   }
-               }
-               &:active {
-                   color: $color-primary;
-                   background-color: $color-white;
-               }
                transition: $transition-style-fast;
                @include respond(tab-land) {
                    background-color: $color-grey-1;
@@ -114,14 +112,16 @@
                }
                &.active {
                    background-color: $color-primary;
-                   & .navbar__link {
-                       color: $color-white;
-                   }
+                   color: $color-white;
                }
-           }
-           &__link {
-               color: $color-tertiary;
-               text-transform: capitalize;
+               &:hover {
+                   background-color: $color-primary;
+                   color: $color-white;
+               }
+               &:active {
+                   color: $color-primary;
+                   background-color: $color-white;
+               }
            }
        }
        

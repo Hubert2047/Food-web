@@ -119,7 +119,6 @@
                 }
                 &__heading {
                     position: relative;
-                    @include underline-effect
                 }
                 &__item {
                     cursor: pointer;
@@ -372,15 +371,26 @@
             }
             
             .login {
-                position: fixed;
                 inset: 0;
                 height: 100%;
+                min-height: 100vh;
                 overflow: hidden;
+                width: 100%;
                 z-index: 1100;
+                position: fixed;
+                transform: translateY(-100%);
+                transition: all .5s ease-in-out;
+                opacity: 0;
                 // position: relative;
+                &.active {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+                overflow-y: scroll;
                 background-color: #eee;
-                @include respond(tab-port) {
-                    min-height: 700px;
+                @include respond(mobile) {
+                    min-height: 80rem;
+                    height: 100vh;
                 }
                 &__form {
                     position: absolute;
@@ -402,10 +412,10 @@
                     top: 10%;
                     right: 50%;
                     z-index: 6;
-                    transition: all .8s linear;
+                    transition: all 1.2s ease-in-out;
                     transform: translateY(-50%);
                     background: linear-gradient(-45deg, #4481eb, #04befe);
-                    @include respond(tab-port) {
+                    @include respond(mobile) {
                         left: 30%;
                         bottom: 68%;
                         width: 150rem;
@@ -421,7 +431,7 @@
                         transform: translate(100%, -50%);
                         right: 52%;
                         background: $color-fouth;
-                        @include respond(tab-port) {
+                        @include respond(mobile) {
                             transform: translate(-50%, 100%);
                             bottom: 35%;
                             right: initial;
@@ -444,7 +454,7 @@
                     }
                     & .login__signin-signup {
                         left: 25%;
-                        @include respond(tab-port) {
+                        @include respond(mobile) {
                             top: 12%;
                             left: 50%;
                             transform: translate(-50%, 0);
@@ -468,8 +478,9 @@
                     display: grid;
                     grid-template-columns: 1fr;
                     z-index: 5;
-                    transition: all .5s .6s linear;
-                    @include respond(tab-port) {
+                    transition: all .5s .7s linear;
+                    backface-visibility: hidden;
+                    @include respond(mobile) {
                         left: 50%;
                         top: 60%;
                     }
@@ -485,12 +496,14 @@
                 }
                 &__sign-in {
                     z-index: 2;
-                    transition: all .5s .6s linear;
+                    transition: all .2s .7s linear;
+                    backface-visibility: hidden;
                 }
                 &__sign-up {
                     z-index: 1;
                     opacity: 0;
-                    transition: all .5s .6s linear;
+                    transition: all .2s .7s linear;
+                    backface-visibility: hidden;
                 }
                 &__title {
                     font-size: 2.2rem;
@@ -534,16 +547,16 @@
                     flex: 1 1 15%;
                     grid-column: 1/2;
                     grid-row: 1/2;
-                    &--eye {
-                        cursor: pointer;
-                        grid-column: 3/4;
-                        &:hover {
-                            color: $color-primary;
-                            transform: translateY(-1px);
-                        }
-                        &:active {
-                            transform: translateY(0);
-                        }
+                }
+                &__eye {
+                    cursor: pointer;
+                    grid-column: 3/4;
+                    &:hover {
+                        color: $color-primary;
+                        transform: translateY(-1px);
+                    }
+                    &:active {
+                        transform: translateY(0);
                     }
                 }
                 &__social-text {
@@ -586,7 +599,7 @@
                 right: 0;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                @include respond(tab-port) {
+                @include respond(mobile) {
                     grid-template-columns: 1fr;
                     grid-template-rows: repeat(3, 1fr);
                     // background-color: green;
@@ -598,16 +611,16 @@
                 flex-direction: column;
                 text-align: center;
                 z-index: 7;
-                @include respond(tab-port) {
+                @include respond(mobile) {
                     flex-direction: row;
                     justify-content: center;
                 }
                 &__left {
                     padding: 12% 17% 2rem 12%;
                     pointer-events: all;
-                    transition: all 1.1s .4s linear-out;
+                    transition: all 1.1s .4s linear;
                     align-items: flex-end;
-                    @include respond(tab-port) {
+                    @include respond(mobile) {
                         grid-row: 1/2;
                         padding: 2.5rem 8%;
                         align-items: center;
@@ -618,8 +631,8 @@
                     transform: translateX(800px);
                     pointer-events: none;
                     align-items: flex-start;
-                    transition: all 1.1s .4s linear-out;
-                    @include respond(tab-port) {
+                    transition: all 1.1s .4s linear;
+                    @include respond(mobile) {
                         transform: translateY(300px);
                         grid-row: 3/4;
                         padding: 2.5rem 8%;
@@ -630,7 +643,7 @@
                     color: $color-grey-1;
                     &>*:not(:last-child) {
                         margin-bottom: 1.5rem;
-                        @include respond(tab-port) {
+                        @include respond(mobile) {
                             margin-bottom: 1rem;
                         }
                     }
@@ -639,7 +652,7 @@
                         text-align: justify;
                         text-indent: 3rem;
                     }
-                    @include respond(tab-port) {
+                    @include respond(mobile) {
                         padding-right: 10%;
                         ;
                     }
@@ -648,13 +661,13 @@
                     font-weight: 700;
                     line-height: 1;
                     font-size: 2.2rem;
-                    @include respond(tab-port) {
+                    @include respond(mobile) {
                         font-size: 2rem;
                     }
                 }
                 &__img {
                     width: 100%;
-                    @include respond(tab-port) {
+                    @include respond(mobile) {
                         width: 30%;
                     }
                 }
@@ -676,10 +689,12 @@
                 &__name {
                     font-size: 1.4rem;
                     font-weight: 500;
+                    text-transform: capitalize;
                 }
                 &__icons {
                     display: flex;
                     gap: 1rem;
+                    cursor: pointer;
                     & a {
                         font-size: 1.5rem;
                         display: flex;
