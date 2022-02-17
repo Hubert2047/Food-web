@@ -387,7 +387,7 @@
                 }
                 overflow-y: scroll;
                 background-color: #eee;
-                @include respond(tab-portz) {
+                @include respond(tab-port) {
                     min-height: 80rem;
                     height: 100vh;
                 }
@@ -414,7 +414,7 @@
                     transition: all 2s ease-in-out;
                     transform: translateY(-50%);
                     background: linear-gradient(-45deg, #4481eb, #04befe);
-                    @include respond(tab-portz) {
+                    @include respond(tab-port) {
                         left: 30%;
                         bottom: 68%;
                         width: 150rem;
@@ -430,7 +430,7 @@
                         transform: translate(100%, -50%);
                         right: 52%;
                         background: $color-fouth;
-                        @include respond(tab-portz) {
+                        @include respond(tab-port) {
                             transform: translate(-50%, 100%);
                             bottom: 35%;
                             right: initial;
@@ -453,7 +453,7 @@
                     }
                     & .login__signin-signup {
                         left: 25%;
-                        @include respond(tab-portz) {
+                        @include respond(tab-port) {
                             top: 12%;
                             left: 50%;
                             transform: translate(-50%, 0);
@@ -479,7 +479,7 @@
                     z-index: 5;
                     transition: all .5s .7s linear;
                     backface-visibility: hidden;
-                    @include respond(tab-portz) {
+                    @include respond(tab-port) {
                         left: 50%;
                         top: 60%;
                     }
@@ -598,7 +598,7 @@
                 right: 0;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                @include respond(tab-portz) {
+                @include respond(tab-port) {
                     grid-template-columns: 1fr;
                     grid-template-rows: repeat(3, 1fr);
                     // background-color: green;
@@ -610,7 +610,7 @@
                 flex-direction: column;
                 text-align: center;
                 z-index: 7;
-                @include respond(tab-portz) {
+                @include respond(tab-port) {
                     flex-direction: row;
                     justify-content: center;
                 }
@@ -619,7 +619,7 @@
                     pointer-events: all;
                     transition: all 1.1s .4s linear;
                     align-items: flex-end;
-                    @include respond(tab-portz) {
+                    @include respond(tab-port) {
                         grid-row: 1/2;
                         padding: 2.5rem 8%;
                         align-items: center;
@@ -631,7 +631,7 @@
                     pointer-events: none;
                     align-items: flex-start;
                     transition: all 1.1s .4s linear;
-                    @include respond(tab-portz) {
+                    @include respond(tab-port) {
                         transform: translateY(300px);
                         grid-row: 3/4;
                         padding: 2.5rem 8%;
@@ -642,7 +642,7 @@
                     color: $color-grey-1;
                     &>*:not(:last-child) {
                         margin-bottom: 1.5rem;
-                        @include respond(tab-portz) {
+                        @include respond(tab-port) {
                             margin-bottom: 1rem;
                         }
                     }
@@ -651,7 +651,7 @@
                         text-align: justify;
                         text-indent: 3rem;
                     }
-                    @include respond(tab-portz) {
+                    @include respond(tab-port) {
                         padding-right: 10%;
                         ;
                     }
@@ -660,13 +660,13 @@
                     font-weight: 700;
                     line-height: 1;
                     font-size: 2.2rem;
-                    @include respond(tab-portz) {
+                    @include respond(tab-port) {
                         font-size: 2rem;
                     }
                 }
                 &__img {
                     width: 100%;
-                    @include respond(tab-portz) {
+                    @include respond(tab-port) {
                         width: 30%;
                     }
                 }
